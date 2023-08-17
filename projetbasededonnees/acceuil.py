@@ -35,7 +35,7 @@ def parcourir():
 def valider(): # valider les champs
     global imageName #variables
     if prenomEntre.get() and nomEntre.get() and imageName:  #get() - permet de récupérer ce qui se trouve dans les champs
-        photo = 'C:/Users/antoa/OneDrive/Desktop/PYTHONpourlesnuls/projetbasededonnees/images/'+imageName.split('/')[-1]  #dernière partie des fichiers
+        photo = 'images/'+imageName.split('/')[-1]  #dernière partie des fichiers
         pn = Personnage(prenomEntre.get(), nomEntre.get(), photo)
         img = Image.open(imageName)
         img.save(photo)
